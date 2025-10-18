@@ -1,6 +1,6 @@
 package projects.models;
 
-public class ReportEntry {
+public class ReportEntry { // là gì?
     private String ngayGiaoDich;
     private int maNhanVien; // Mặc định là 0 nếu chỉ báo cáo theo ngày
     private double tongThu;

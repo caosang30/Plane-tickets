@@ -6,7 +6,7 @@ public class ReportData {
     private int totalTicketsSold;
     private int totalCustomers;
     private int totalActiveFlights;
-    private String reportPeriod;
+    private String reportPeriod; //date
 
     // Constructor mặc định
     public ReportData() { 

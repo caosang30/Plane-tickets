@@ -1,30 +1,29 @@
 package projects.models;
 
 // Ánh xạ bảng KHACHHANG
+
 public class Customer {
-    private int maKhachHang; // MaKhachHang (PK)
+    private String maKhachHang; // MaKhachHang (PK)không có nhập tay
     private String tenKhachHang; // TenKhachHang
-    private String diaChi; // DiaChi
-    private String soDienThoai; // SoDienThoai
+    private String diaChi; // DiaChi có thể có nhiều
+    private String soDienThoai; // SoDienThoai có thể có nhiều
     private String cccd; // CCCD
 
-    // Constructor cho việc lấy dữ liệu từ CSDL
-    public Customer(int maKhachHang, String tenKhachHang, String diaChi, String soDienThoai, String cccd) {
-        this.maKhachHang = maKhachHang;
+    public Customer() {
+    }
+    // Constructor cho việc lấy dữ liệu từ CSDL setters
+    public Customer( String tenKhachHang, String diaChi, String soDienThoai, String cccd) {
         this.tenKhachHang = tenKhachHang;
         this.diaChi = diaChi;
         this.soDienThoai = soDienThoai;
         this.cccd = cccd;
     }
 
-    // Constructor cho việc thêm mới (chưa có ID)
-    public Customer(String tenKhachHang, String diaChi, String soDienThoai, String cccd) {
-        this(0, tenKhachHang, diaChi, soDienThoai, cccd);
-    }
+    // Constructor cho việc thêm mới (chưa có mã) (không cần tại mã sẽ tự động tạo mà)
+    
     
     // Getters and Setters
-    public int getMaKhachHang() { return maKhachHang; }
-    public void setMaKhachHang(int maKhachHang) { this.maKhachHang = maKhachHang; }
+    public String getMaKhachHang() { return maKhachHang; }
     public String getTenKhachHang() { return tenKhachHang; }
     public void setTenKhachHang(String tenKhachHang) { this.tenKhachHang = tenKhachHang; }
     public String getDiaChi() { return diaChi; }

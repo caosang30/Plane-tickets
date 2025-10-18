@@ -17,7 +17,7 @@ public class Flight {
 
     // --- CÁC TRƯỜNG LẤY TỪ DB QUA JOIN ---
     private String viTriDuongBay; // Lấy từ DUONGBAY.ViTri
-    private String tenMayBay;      // Lấy từ MAYBAY.TenMayBay
+    private String tenMayBay;      // Lấy từ MAYBAY.TenMayBay (tại sao không là mã máy bay?)
     // ------------------------------------
 
     public Flight() {

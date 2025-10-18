@@ -7,10 +7,10 @@ public class Ticket {
     private final int maNhanVien; 
     private final int maKhachHang; // Trường này đã có, không cần thay đổi
     private final int maChuyenBay; 
-    private final int soLuongBan; 
+    private final int soLuongBan; // nên để là số lượng ( == số chỗ) , phụ thuộc vào máy bay
     
     // Các trường phụ trợ (dùng cho logic tính toán và hiển thị)
-    private final String loaiVe;
+    private final String loaiVe;// loại vé thương gia đồ đồ đúng không , nếu cho nhâp tay rồi lỡ như tui nhập giá vé thương gia thấp hơn giá vé bth đc k?
     private final double donGia; // Trường này đã có, không cần thay đổi
 
     // Constructor cho việc Đặt vé MỚI

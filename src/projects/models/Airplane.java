@@ -1,12 +1,14 @@
 package projects.models;
 
-public class Airplane {
-    private int maMayBay; // MaMayBay (PK)
+public class Airplane { 
+    private int maMayBay; // MaMayBay (PK) đổi về string
     private String tenMayBay; // TenMayBay
     private String hangSanXuat; // HangSanXuat
-    private String kichThuoc; // KichThuoc
-    private int soCho; // SoCho
+    private String kichThuoc; // KichThuoc chưa rõ
+    private int soCho; // SoCho 
 
+    // rong
+    public Airplane(){}
     // Constructor full
     public Airplane(int maMayBay, String tenMayBay, String hangSanXuat, String kichThuoc, int soCho) {
         this.maMayBay = maMayBay;
@@ -26,4 +28,24 @@ public class Airplane {
     // ----------------------------
     
     public int getSoCho() { return soCho; }
+
+// setters
+    public void setmaMayBay(int m){
+        maMayBay=m;
+    }
+    public void setTenMayBay(String s){
+        tenMayBay=s;
+    }
+    public void setHangSanXuat(String s){
+        hangSanXuat = s;
+    }
+    public void setKichThuoc(String k){
+        kichThuoc=k;
+    }
+    public void setSoCho(int s){
+        soCho=s;
+    }
+
+
 }
+    

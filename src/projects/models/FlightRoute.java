@@ -2,9 +2,9 @@ package projects.models;
 
 public class FlightRoute {
     private int maDuongBay; // MaDuongBay (PK)
-    private String viTri; // ViTri (Ví dụ: Sân bay đi - Sân bay đến)
-    private double chieuDai; // ChieuDai
-    private double chieuRong; // ChieuRong
+    private String viTri; // ViTri (Ví dụ: Sân bay đi - Sân bay đến) nhập tay là mệt lòi ỉa luôn nha( 2 mũ n đó)
+    private double chieuDai; // ChieuDai (để chi ?)
+    private double chieuRong; // ChieuRong (để chi ?)
     private String tinhTrang; // TinhTrang
 
     // Constructor full
